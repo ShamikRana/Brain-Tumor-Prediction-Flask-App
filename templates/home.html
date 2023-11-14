@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumor Prediction</title>
+</head>
+<body>
+    <header>
+        <h1>Tumor Prediction</h1>
+    </header>
+
+    <section class="content">
+        <form method="POST" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                <label for="file">Upload Image:</label>
+                {{ form.file }}
+            </div>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-primary") }}
+            </div>
+        </form>
+    </section>
+</body>
+</html>
