@@ -21,7 +21,7 @@ This project aims to provide a interface for predicting brain tumors based on MR
 - Images converted into arrays using OpenCV and numpy
 - Dataset divided into 90:10 train-test ratio
 - Normalized data and applied data augmentation
-- Imported Xception model arhitecture and freeze its layers
+- Imported Xception model architecture and freeze its layers
 - Utilized the Xception model architecture, fine-tuning with additional dense layers
 - Model saved in H5 format for use in the Flask app
 
@@ -43,11 +43,11 @@ This project aims to provide a interface for predicting brain tumors based on MR
 ![Confusion Matrix](https://raw.githubusercontent.com/ShamikRana/Brain-Tumor-Prediction-Flask-App/master/images/confution%20matrix.png)
 
 ## Web Application Creation Description
-- Created a Python file "prediction.py" for the prediction function.
-- Imported the prediction function into the Flask file "app.py."
-- HTML pages in ./templates: "home.html" and "predict.html."
-- Uploaded files will be saved in ./static/images for prediction.
-- Predicted class and confidence will be displayed on the predict.html page.
+- Created a Python file "prediction.py" for the prediction function
+- Imported the prediction function into the Flask file "app.py"
+- HTML pages in ./templates: "home.html" and "predict.html"
+- Uploaded files will be saved in ./static/images for prediction
+- Predicted class and confidence will be displayed on the predict.html page
 ### home.html
 ![Home Page](https://raw.githubusercontent.com/ShamikRana/Brain-Tumor-Prediction-Flask-App/master/images/home.png)
 ### predict.html
