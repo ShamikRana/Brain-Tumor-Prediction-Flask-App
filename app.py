@@ -9,7 +9,7 @@ import os
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'megatrone'
+app.config['SECRET_KEY'] = 'abcd1234'
 app.config['IMAGE_FOLDER'] = 'static/image'
 
 if not os.path.exists(app.config['IMAGE_FOLDER']):
