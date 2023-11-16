@@ -57,3 +57,4 @@ This project aims to provide a interface for predicting brain tumors based on MR
 - Fork this repository to have your own copy.
 - Clone your copy on your local system.
 - Install necessary packages into your virtual environment using the command "pip install -r requirements.txt."
+- Run "app.py" file
