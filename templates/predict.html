@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tumor Prediction Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <h1>Prediction Result</h1>
-    </header>
+    <div class="container">
+        <header class="mt-5">
+            <h1>Prediction Result</h1>
+        </header>
 
-    <section class="content">
-        <img src="{{ url_for('static', filename='image/' + file.filename) }}" alt="Uploaded Image">
-        <p><strong>Predicted Class:</strong> {{ predicted_class }}</p>
-        <p><strong>Confidence:</strong> {{ confidence }}</p>
-    </section>
+        <section class="content mt-4">
+            <img src="{{ url_for('static', filename='image/' + file.filename) }}" alt="Uploaded Image" class="img-fluid">
+            <p><strong>Predicted Class:</strong> {{ predicted_class }}</p>
+            <p><strong>Confidence:</strong> {{ confidence }}</p>
+        </section>
+    </div>
 </body>
 </html>
